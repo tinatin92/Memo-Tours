@@ -1,0 +1,558 @@
+
+@font-face {
+    font-family: 'Aeonik Pro TRIAL';
+    src: url('../assets/fonts/AeonikProTRIAL-Light.woff2') format('woff2'),
+        url('../assets/fonts/AeonikProTRIAL-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro TRIAL';
+    src: url('../assets/fonts/AeonikProTRIAL-Bold.woff2') format('woff2'),
+        url('../assets/fonts/AeonikProTRIAL-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro TRIAL';
+    src: url('../assets/fonts/AeonikProTRIAL-Regular.woff2') format('woff2'),
+        url('../assets/fonts/AeonikProTRIAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 16px;
+    font-family: 'Aeonik Pro TRIAL';
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Aeonik Pro TRIAL';
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --primary-red: #F24405;
+    --orange: #F25C05;
+    --carrot: #F28705;
+    --beige: #f2f0e4;
+    --gray: #E4E4E4;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.text-28 {
+    font-size: 28px;
+    line-height: 150%;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 26px;
+    border-radius: 50px;
+    color: var(--beige);
+    background-color: var(--primary-red);
+    display: inline-block;
+    transition-duration: .3s;
+    border: 1px solid var(--primary-red);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--beige);
+    color: var(--primary-red);
+}
+
+.primary {
+    background-color: var(--primary-red);
+}
+
+.margin-100 {
+    margin: 150px 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.al-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.row {
+    flex-direction: row;
+}
+
+/* .column{
+    flex-direction: column;
+} */
+
+.width-50 {
+    width: 50%;
+}
+
+.body-text {
+    margin: 24px 0 36px 0;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.header {
+    font-size: 20px;
+    color: var(--beige);
+    padding: 24px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1000;
+    transition: background .3s;
+}
+.serach input {
+    border: 1px solid var(--beige);
+}
+.header .contact{
+    border: 1px solid var(--beige);
+}
+.serach input::placeholder{
+    color: var(--beige);
+}
+
+.header div,
+.header nav {
+    display: flex;
+    align-items: center;
+}
+
+.header nav {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.header nav li {
+    list-style: none;
+    margin: 0 25px;
+    font-weight: 700;
+}
+
+.header.scrolled {
+    background-color: var(--white);
+
+}
+
+.aboutus .flex {
+    gap: 100px;
+}
+
+.serach {
+    position: relative;
+    margin: 0 44px;
+}
+
+.serach input {
+    border-radius: 50px;
+    padding: 12px 12px 12px 50px;
+    width: 250px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.serach input::placeholder {
+    font-size: 16px;
+    font-family: inherit;
+ 
+}
+
+.serach input:focus {
+    outline: none;
+}
+
+.serach button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    left: 12px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.contact {
+    margin: 0 25px;
+    border: 1px solid var(--black);
+    padding: 8px 26px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.lang {
+    font-weight: 700;
+}
+
+.tour-card {
+
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.tour-card a {
+    font-size: 18px;
+    color: var(--primary-red);
+    transition-duration: .3s;
+    font-weight: 800;
+}
+
+.tour-card a:hover {
+    color: var(--carrot);
+    text-decoration: underline;
+}
+
+.tours {
+    position: relative;
+
+}
+
+.tours .tour-card {
+    width: 33%;
+    height: 500px;
+}
+
+.heading {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray);
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.heading h2 {
+    padding: 0 24px 0 0;
+    background-color: var(--white);
+}
+
+.heading a {
+    display: block;
+    padding: 0 0 0 24px;
+    background-color: var(--white);
+    color: var(--orange);
+    font-weight: 700;
+    transition-duration: .3s;
+}
+
+.heading a:hover {
+    color: var(--carrot);
+    text-decoration: underline;
+}
+
+.guide-card {
+    max-width: 33%;
+    width: 393px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    transition-duration: .3s;
+    cursor: pointer;
+
+}
+
+.guide-card h3 {
+    transition-duration: .3s;
+    font-size: 28px;
+}
+
+.guide-card:hover {
+    border: 1px solid var(--orange);
+}
+
+.guide-card:hover h3 {
+    color: var(--orange);
+}
+
+.contactus label {
+    display: block;
+    font-size: 18px;
+    color: var(--orange);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.contactus .btn {
+    align-self: center;
+    width: 400px;
+    max-width: 80%;
+}
+
+.contactus input,
+.contactus textarea {
+    border-radius: 12px;
+    border: 1px solid var(--orange);
+    width: 100%;
+    height: 60px;
+    padding: 12px;
+    font-size: 20px;
+
+}
+
+.contactus form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 34px;
+}
+
+.contactus textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contactus h2 {
+    color: var(--orange);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.contact-img {
+    display: flex;
+    align-items: end;
+}
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 50px 0;
+}
+
+.hero-section {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    max-height: 900px;
+
+
+}
+
+.hero-slider-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    inset: 0;
+    color: var(--beige);
+    z-index: 15;
+
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), transparent);
+    z-index: 10;
+}
+
+.hero-section .text-28 {
+    margin: 24px 0 48px 0;
+    max-width: 790px;
+
+}
+
+.hero-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.tour-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.tour-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    position: absolute;
+   
+    z-index: 10;
+   
+    padding: 46px 34px;
+    bottom: -170px;
+   font-weight: 700;
+    left: 0;
+    border-radius: 12px;
+    transition-duration: .5s;
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 24px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+}
+.tour-card-text h3{
+    font-size: 24px;
+}
+.tour-card:hover .tour-card-text {
+    bottom: 0;
+}
+
+.tour-slider {
+    overflow: hidden;
+
+}
+
+.swiper-wrapper {}
+
+.guide-card {}
+
+.hero-section .swiper-pagination {
+    margin-bottom: 50px;
+}
+
+.hero-section .swiper-pagination span {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--beige);
+    z-index: 20;
+    background-color: transparent;
+}
+
+.hero-section .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--beige);
+}
+
+.tours .swiper-pagination-tours {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.tours .swiper-pagination-tours .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--orange);
+    z-index: 20;
+    background-color: transparent;
+}
+
+.tours .swiper-pagination-tours .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--primary-red);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--orange);
+}
+
+.swiper-button-prev {
+    left: -100px;
+}
+
+.swiper-button-next {
+    right: -100px;
+}
