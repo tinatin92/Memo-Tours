@@ -44,3 +44,7 @@ const tourSwiper = new Swiper('.tour-slider', {
         prevEl: ".swiper-button-prev",
       },
 });
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    // Your custom options for a specific gallery
+  });
