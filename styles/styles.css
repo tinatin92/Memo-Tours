@@ -580,12 +580,13 @@ h2 {
     flex-direction: column;
     gap: 34px;
     position: absolute;
-   
+   min-height: 236px;
     z-index: 10;
    
     padding: 46px 34px;
     bottom: -170px;
-   font-weight: 700;
+    /* bottom: 0; */
+  
     left: 0;
     border-radius: 12px;
     transition-duration: .5s;
@@ -596,6 +597,14 @@ h2 {
     -webkit-backdrop-filter: blur(7.3px);
     border: 1px solid rgba(255, 255, 255, 0.35);
 
+   
+
+}
+.tour-card-text div{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 .tour-card-text h3{
     font-size: 24px;
@@ -849,6 +858,12 @@ h2 {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+}
+.guide-card div{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 .guid-image img{
     width: 100%;

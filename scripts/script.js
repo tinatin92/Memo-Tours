@@ -26,15 +26,15 @@ const heroSwiper = new Swiper('.hero-slider', {
 });
 
 const tourSwiper = new Swiper('.tour-slider', {
-    slidesPerView: 3,
+/*     slidesPerView: 3, */
     spaceBetween: 20,
     pauseOnMouseEnter: 'true',
     speed: 1000,
     loop: true,
-    autoplay: {
+   /*  autoplay: {
         delay: 2500,
         disableOnInteraction: true,
-    },
+    }, */
     pagination: {
         el: ".swiper-pagination-tours",
         clickable: true,
@@ -42,6 +42,20 @@ const tourSwiper = new Swiper('.tour-slider', {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
       },
 });
 

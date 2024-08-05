@@ -1,18 +1,168 @@
 @media (max-width: 1620px){
 
+
+
 }
 @media (max-width: 1400px) {
+    h1 {
+        font-size: 48px;
+       
+    }
+    .hero-section .text-28 {
+        margin: 16px 0 24px 0;
+        max-width: 790px;
+    }
+    .text-28 {
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .margin-100 {
+        margin: 100px 0;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+    .guid-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .guide-card h3 {
+        transition-duration: .3s;
+        font-size: 22px;
+    }
 
 }
 @media (max-width: 1200px){
+    .hero-section{
+        max-height: 700px;
+    }
+    .aboutus .flex {
+        gap: 50px;
+    }
+    .body-text {
+        margin: 16px 0 24px 0;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .tours .tour-card {
+        height: 400px;
+    }
+    .swiper-button-prev {
+        left: -50px;
+    }
+    .swiper-button-next {
+        right: -50px;
+    }
+    .tour-card-text h3 {
+        font-size: 22px;
+    }
 
+    .tour-card-text{
+        gap: 22px;
+        padding: 34px 24px;
+        bottom: -148px;
+    }
+    .contact-img {
+        align-items: center;
+    }
+    .contact-img img{
+        max-width: 80%;
+    }
+    .contactus .btn {
+    
+        max-width: 60%;
+    }
+    .footer .footer-background-image1 {
+     
+        width: 100px;
+    }
+    .footer .footer-background-image2 {
+   
+        width: 100px;
+    }
+    .heading {
+       
+        margin-bottom: 40px;
+    }
+    .margin-100 {
+        margin: 80px 0;
+    }
+    .tours .swiper-pagination-tours {
+    
+        margin-top: 30px;
+    }
 }
 @media (max-width: 992px) {
+    .hero-section{
+        max-height: 500px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .text-28 {
+        font-size: 18px;
+       
+    }
+    .flex.column {
+        flex-direction: column;
+    }
+    .flex.column  .width-50{
+        width: 100%;
+    }
+    .margin-100 {
+        margin: 60px 0;
+    }
+    .aboutus .justify-end {
+        justify-content: center;
+        order: -1;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .contact-img{
+       justify-content: center;
+       margin-bottom: 40px;
+    }
+    .contact-img img {
+        max-width: 59%;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+
 }
 @media (max-width: 768px){
+    .swiper-button-prev {
+        display: block;
+        left: 0px;
+    }
+    .swiper-button-next {
+        display: block;
+        right: 0px;
+    }
+
+    .tour-slider{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .tours .tour-card {
+        height: 500px;
+    }
+    .contactus form {
+    
+        row-gap: 18px;
+    }
 
 }
 @media (max-width: 576px){
+    
 
 }
 @media (max-width: 440px) {
