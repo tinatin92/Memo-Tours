@@ -685,11 +685,17 @@ h2 {
 .image-grid__image{
     border-radius: 16px;
     overflow: hidden;
+
 }
+
 .image-grid__image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition-duration: .3s;
+}
+.image-grid__image img:hover{
+    transform: scale(1.1);
 }
  .aboutus-page.margin-100{
     margin: 100px 0 100px 0;
@@ -838,3 +844,14 @@ h2 {
     background-color: transparent;
     cursor: pointer;
  }
+.guid-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.guid-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
