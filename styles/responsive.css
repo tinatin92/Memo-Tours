@@ -36,6 +36,11 @@
 
 }
 @media (max-width: 1200px){
+    .burger-icon{
+        display: flex !important;
+        gap: 4px;
+       margin-left: auto;
+    }
     .hero-section{
         max-height: 700px;
     }
@@ -95,6 +100,45 @@
     
         margin-top: 30px;
     }
+    .burger-menu{
+        padding: 48px 24px 148px 24px;
+        position: fixed;
+        flex-direction: column;
+        top: 100px;
+      border-radius: 0 0 0 24px;
+        right: -100%;
+        background-color: #fff;
+        transition-duration: .5s;
+    }
+    .burger-menu nav{
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .nav-buttons{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logo span {
+        font-size: 69px;
+    }
+    .burger-menu.open{
+        right: 0;
+    }
+    .header.white {
+        background-color: #fff;
+    }
+     .header.white,
+     .header.white input, 
+     .header.white select,
+     .header.white span,
+     .icon-search {
+        color: #000;
+     }
+     .icon-search {
+        color: red;
+     }
+     
 }
 @media (max-width: 992px) {
     .hero-section{
@@ -136,6 +180,17 @@
     .swiper-button-next {
         display: none;
     }
+    .footer .flex.column{
+        flex-direction: row;
+    }
+    .footer-nav{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+.guides .flex{
+    align-items: center;
+}
 
 }
 @media (max-width: 768px){
@@ -166,5 +221,6 @@
 
 }
 @media (max-width: 440px) {
+    
     
 }

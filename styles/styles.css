@@ -331,6 +331,25 @@ h2 {
 .lang {
     font-weight: 700;
 }
+.nav-buttons .share{
+   color: var(--beige);
+    font-size: 24px;
+    
+    
+}
+.nav-buttons .share a{
+    transition-duration: .3s;
+  }
+.header.scrolled .nav-buttons .share{
+    color: var(--black);
+}
+.nav-buttons .share a:hover{
+    color: var(--orange);
+}
+.icon-icons8-youtube{
+    font-size: 36px;
+    margin-right: 16px;
+}
 
 .tour-card {
 
@@ -869,4 +888,40 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.lang select{
+    font-size: 20px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--beige);
+}
+.lang select option{
+    color: #000;
+}
+.lang select:focus{
+    outline: none;
+}
+.header.scrolled .lang select{
+    color: #000;
+}
+.burger-icon{
+  display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+.burger-icon div{
+    width: 30px;
+    height: 4px;
+    border-radius: 12px;
+    background-color: #000;
+   
+}
+.burger-icon{
+    display: none !important;
+}
+.burger-menu{
+    display: flex;
+    flex: 1;
 }

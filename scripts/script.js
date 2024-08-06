@@ -62,3 +62,11 @@ const tourSwiper = new Swiper('.tour-slider', {
 Fancybox.bind('[data-fancybox="gallery"]', {
     // Your custom options for a specific gallery
   });
+
+  const burgerIcon = document.querySelector('.burger-icon')
+  const burgerMenu = document.querySelector('.burger-menu')
+  const header = document.querySelector('.header');
+  burgerIcon.addEventListener('click', () =>{
+    burgerMenu.classList.toggle('open')
+    header.classList.toggle('white')
+  })
