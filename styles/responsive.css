@@ -36,6 +36,17 @@
 
 }
 @media (max-width: 1200px){
+    .tours-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .adminlogin{
+        width: 50%;
+    }
+    .tour-image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
     .burger-icon{
         display: flex !important;
         gap: 4px;
@@ -69,7 +80,7 @@
     .tour-card-text{
         gap: 22px;
         padding: 34px 24px;
-        bottom: -148px;
+        bottom: -150px;
     }
     .contact-img {
         align-items: center;
@@ -109,6 +120,7 @@
         right: -100%;
         background-color: #fff;
         transition-duration: .5s;
+        max-width: 100%;
     }
     .burger-menu nav{
         flex-direction: column;
@@ -141,6 +153,27 @@
      
 }
 @media (max-width: 992px) {
+    .aboutus .width-50{
+        width: 100%;
+        padding: 0;
+    }
+    .margin-50 {
+        margin: 50px 0;
+    }
+    .contact-img img {
+       
+        align-self: center;
+    }
+    .contact-inputs{
+        max-width: 80%;
+        align-self: center;
+    }
+    .image-grid{
+        grid-template-columns: auto auto;
+    }
+    .adminlogin{
+        width: 60%;
+    }
     .hero-section{
         max-height: 500px;
     }
@@ -191,9 +224,59 @@
 .guides .flex{
     align-items: center;
 }
+.tours-detail .tour-text{
+    width: 100%;
+    padding: 0;
+}
+.tours-detail {
+    margin: 50px 0;
+}
+.tour-info{
+    margin-bottom: 0;
+}
+.tour-map{
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+}
+.guide-card {
+   max-width: 70%;
+}
+.tour-info{
+    flex-wrap: wrap;
+    border-radius: 24px;
+}
+.tour-infobox{
+    width: 50%;
+    margin: 12px 0;
+    
+}
+.tour-infobox:nth-child(even){
+    border: none;
+}
 
 }
 @media (max-width: 768px){
+    .tours-grid{
+        grid-template-columns:1fr;
+    }
+    .search-page form{
+        width: 100%;
+        margin: 25px auto;
+    }
+    .search-result{
+        margin-top: 40px;
+    }
+    .contact-inputs{
+        max-width: 100%;
+        align-self: center;
+    }
+    .adminlogin{
+        width: 90%;
+    }
+    .adminlogin h1{
+        font-size: 24px;
+    }
     .swiper-button-prev {
         display: block;
         left: 0px;
@@ -214,12 +297,24 @@
     
         row-gap: 18px;
     }
-
+    
 }
 @media (max-width: 576px){
-    
-
+    .footer .flex.column {
+        flex-direction: column;
+    }
+    .footer-contact,
+  .footer-nav {
+    width: 100%;
+  }
+  .footer-nav {
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
+  
+
+
 @media (max-width: 440px) {
     
     

@@ -343,7 +343,7 @@ h2 {
 .header.scrolled .nav-buttons .share{
     color: var(--black);
 }
-.nav-buttons .share a:hover{
+.header.scrolled .nav-buttons .share a:hover{
     color: var(--orange);
 }
 .icon-icons8-youtube{
@@ -352,7 +352,8 @@ h2 {
 }
 
 .tour-card {
-
+    width: 100%;
+    height: 500px;
     overflow: hidden;
     border-radius: 24px;
 }
@@ -374,10 +375,7 @@ h2 {
 
 }
 
-.tours .tour-card {
 
-    height: 500px;
-}
 
 .heading {
     position: relative;
@@ -580,18 +578,20 @@ h2 {
 }
 .tour-image{
     width: 100%;
-    height: 500px;
+    height: 100%;
     overflow: hidden;
 }
 .tour-image img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 }
 
 .tour-card {
     position: relative;
     cursor: pointer;
+    width: 100%;
 }
 
 .tour-card-text {
@@ -739,7 +739,7 @@ h2 {
     display: grid;
     column-gap: 20px;
     row-gap: 40px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
  }
  .tours-detail{
     margin: 100px 0;
@@ -787,13 +787,14 @@ h2 {
     padding: 24px 0;
     border: 1px solid var(--orange);
     border-radius: 50px;
+    margin-bottom: 40px;
  }
  .tour-infobox{
     display: flex;
     align-items: center;
     border-right: 1px solid var(--orange);
     font-weight: 700;
-    width: 33%;
+    width: 25%;
     padding: 0 0 0 24px;
  }
  .tour-infobox:nth-last-of-type(){
@@ -924,4 +925,17 @@ h2 {
 .burger-menu{
     display: flex;
     flex: 1;
+}
+.adminlogin {
+    width: 40%;
+    margin: auto;
+   margin-top: 200px;
+ 
+}
+.adminlogin h1 {
+    margin-bottom: 16px;
+    font-size: 50px;
+}
+.text-center{
+    text-align: center;
 }
